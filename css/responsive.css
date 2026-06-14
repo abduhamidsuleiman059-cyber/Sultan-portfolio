@@ -1,0 +1,166 @@
+/* ================= TABLETS ================= */
+@media (max-width: 1024px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR FIX */
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    display: block;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+
+  /* HERO FIX */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* STATS */
+  .stats {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* ABOUT CARD */
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* GRID FIX */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECTS */
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* MODAL */
+  .modal-box {
+    width: 90%;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content h3 {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth-buttons button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+@media (max-width: 1024px) {
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

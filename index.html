@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SULTAN Portfolio</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Icons (optional later use) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">SULTAN</div>
+
+  <!-- HAMBURGER BUTTON (NEW) -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="auth-buttons">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </div>
+</header>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section id="home" class="hero">
+
+  <!-- LEFT IMAGE -->
+  <div class="hero-img">
+    <img src="images/sultan.jpg" alt="Sultan Profile">
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div class="hero-content">
+    <h2 class="hello-text">Hello, I'm</h2>
+    <h1><span>SULTAN</span></h1>
+    <h3>Building Designer | Phone Technician | Laptop Technician</h3>
+
+    <p class="typing-text">
+      <!-- JS typing effect later -->
+    </p>
+
+    <div class="hero-buttons">
+      <a href="documents/Sultan-CV.pdf" class="btn">Download CV</a>
+      <a href="#projects" class="btn outline">View Projects</a>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-linkedin"></i>
+       <i class="fab fa-google"></i>
+        <i class="fab fa-telegram"></i>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= STATS SECTION ================= -->
+<section class="stats">
+  <div class="stat-box">
+    <h2>20+</h2>
+    <p>Projects</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>100+</h2>
+    <p>Devices Fixed</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>3+</h2>
+    <p>Years Experience</p>
+  </div>
+
+  <div class="stat-box">
+    <h2>10+</h2>
+    <p>Designs</p>
+  </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+
+  <div class="card">
+    <img src="images/sultan.jpg" alt="Sultan">
+
+    <div>
+      <p>
+        I am Sultan, a passionate student specializing in building design,
+        phone repair, and laptop repair. I combine creativity and technical
+        skills to deliver professional solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <h2>My Skills</h2>
+
+  <div class="grid">
+    <div class="box">Building Design</div>
+    <div class="box">AutoCAD</div>
+    <div class="box">Phone Repair</div>
+    <div class="box">Laptop Repair</div>
+    <div class="box">Hardware Fixing</div>
+    <div class="box">Troubleshooting</div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="grid">
+    <div class="project">
+      <img src="images/project1.jpg">
+      <h3>House Design</h3>
+    </div>
+
+    <div class="project">
+      <img src="images/project2.jpg">
+      <h3>Phone Repair</h3>
+    </div>
+
+    <div class="project">
+      <img src="images/project3.jpg">
+      <h3>Laptop Fix</h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="section">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="box">Building Design</div>
+    <div class="box">Phone Repair</div>
+    <div class="box">Laptop Repair</div>
+    <div class="box">Tech Consultation</div>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <p>Let’s work together on your projects.</p>
+
+  <button class="btn">Send Message</button>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 SULTAN Portfolio. All Rights Reserved.</p>
+</footer>
+
+
+<!-- ================= LOGIN / REGISTER MODAL ================= -->
+<div id="authModal" class="modal">
+
+  <div class="modal-box">
+
+    <span class="close" id="closeModal">&times;</span>
+
+    <!-- LOGIN -->
+    <div class="form" id="loginForm">
+      <h2>Login</h2>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+
+    <!-- REGISTER -->
+    <div class="form" id="registerForm">
+      <h2>Register</h2>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Register</button>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
